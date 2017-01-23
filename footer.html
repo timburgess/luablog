@@ -1,0 +1,29 @@
+
+      <footer>
+      </footer>
+
+    <script src="/static/hl/highlight.min.js"></script>
+
+    <script>
+        // hljs 
+        var comments = document.querySelectorAll('pre code');
+        for (var i = 0, len = comments.length; i < len; i++) {
+              var comment = comments[i];
+              hljs.highlightBlock(comment);
+        }
+        // Analytics
+        (function(){ var u=(("https:" == document.location.protocol) ? "https://statistikk.idrift.no/" : "http://statistikk.idrift.no/");
+         var _paq = _paq || [];
+         _paq.push(['setSiteId', 115]);
+         _paq.push(['setTrackerUrl', u+'piwik.php']);
+         _paq.push(['trackPageView']);
+         _paq.push(['enableLinkTracking']);
+         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript'; g.defer=true; g.async=true; g.src=u+'piwik.js';
+         s.parentNode.insertBefore(g,s); })();
+
+
+        //$('.logo img').hover(function(){ $(this).addClass('icon-spin'); }, function() {$(this).removeClass('icon-spin')});
+    </script>
+    <noscript><p><img src="http://statistikk.idrift.no/piwik.php?idsite=115" style="border:0" alt=""><p></noscript>
+  </body>
+</html>
